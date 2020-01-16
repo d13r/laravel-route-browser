@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Routing\Route;
 use Illuminate\Routing\Router;
 use Illuminate\Support\Collection;
-use Str;
+use Illuminate\Support\Str;
 
 class RouteListController
 {
