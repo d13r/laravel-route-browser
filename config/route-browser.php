@@ -26,4 +26,9 @@ return [
 
     'path' => 'routes',
 
+    'filters' => [
+        '_debugbar',
+        '_ignition'
+    ]
+
 ];
