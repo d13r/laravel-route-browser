@@ -27,8 +27,8 @@ return [
     'path' => 'routes',
 
     'filters' => [
-        '_debugbar',
-        '_ignition'
+        '_debugbar*',
+        '_ignition*'
     ]
 
 ];
