@@ -26,9 +26,17 @@ return [
 
     'path' => 'routes',
 
+    /*
+    |--------------------------------------------------------------------------
+    | Route filters
+    |--------------------------------------------------------------------------
+    |
+    | Here we can define which routes are hidden
+    |
+    */
     'filters' => [
-        '_debugbar',
-        '_ignition'
+        '_debugbar*',
+        '_ignition*'
     ]
 
 ];
