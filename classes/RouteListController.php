@@ -20,7 +20,6 @@ class RouteListController
             ->reject(function ($route) {
                 return Str::is($route->uri, config('route-browser.filters'));
             })
-            ->sortBy('uri')
             ->partition('isFallback');
 
         /** @var Collection $routes */
