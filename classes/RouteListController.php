@@ -18,7 +18,7 @@ class RouteListController
         // Based on RouteCollection::matchAgainstRoutes() - sort fallback routes to the end
         [$fallbacks, $routes] = collect($routes)
             ->reject(function ($route) {
-                return Str::is($route->uri, config('route-browser.filters'));
+                return Str::is(config('route-browser.filters'), $route->uri);
             })
             ->partition('isFallback');
 
