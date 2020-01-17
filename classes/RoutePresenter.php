@@ -80,7 +80,7 @@ class RoutePresenter
             // This allows users to just copy-paste the URL without modifying it
             // But it still accepts just the relative path, e.g. "/routes"
             $base = rawurldecode($this->request->getBasePath());
-            if (!empty($base) && strpos($path, $base) === 0) {
+            if ($base && strpos($path, $base) === 0) {
                 $path = substr($path, strlen($base));
             }
 
