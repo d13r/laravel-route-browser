@@ -28,15 +28,19 @@ return [
 
     /*
     |--------------------------------------------------------------------------
-    | Route filters
+    | Exclude Routes
     |--------------------------------------------------------------------------
     |
-    | Here we can define which routes are hidden
+    | Paths to exclude from the list. May contain wildcards.
     |
     */
-    'filters' => [
-        '_debugbar*',
-        '_ignition*'
-    ]
+
+    'exclude' => [
+        '/_debugbar/*', // https://github.com/barryvdh/laravel-debugbar
+        '/_ignition/*', // https://github.com/facade/ignition
+    ],
+
+    // Exclude Route Browser's own routes?
+    'exclude-self' => true,
 
 ];
